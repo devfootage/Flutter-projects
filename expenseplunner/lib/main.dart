@@ -14,36 +14,26 @@ class Expense extends StatefulWidget {
 
 class _ExpenseState extends State<Expense> {
   final List<Quesions> _quesions = [
-    Quesions(
-        id: DateTime.now().toString(),
-        title: "Shoping Bill",
-        amount: 400,
-        date: DateTime.now()),
-    Quesions(
-        id: DateTime.now().toString(),
-        title: "School Fee",
-        amount: 300,
-        date: DateTime.now().subtract(const Duration(days: 1))),
-    Quesions(
-        id: DateTime.now().toString(),
-        title: "Universtiy fee",
-        amount: 200,
-        date: DateTime.now().subtract(const Duration(days: 2))),
-    Quesions(
-        id: DateTime.now().toString(),
-        title: "Masjid",
-        amount: 400,
-        date: DateTime.now().subtract(Duration(days: 3))),
-    Quesions(
-        id: DateTime.now().toString(),
-        title: "College fee",
-        amount: 500,
-        date: DateTime.now().subtract(Duration(days: 4))),
-    Quesions(
-        id: DateTime.now().toString(),
-        title: "Famirly fee",
-        amount: 270,
-        date: DateTime.now().subtract(Duration(days: 5))),
+    // Quesions(
+    //     id: DateTime.now().toString(),
+    //     title: "Shoping Bill",
+    //     amount: 400,
+    //     date: DateTime.now()),
+    // Quesions(
+    //     id: DateTime.now().toString(),
+    //     title: "School Fee",
+    //     amount: 300,
+    //     date: DateTime.now().subtract(const Duration(days: 1))),
+    // Quesions(
+    //     id: DateTime.now().toString(),
+    //     title: "Universtiy fee",
+    //     amount: 200,
+    //     date: DateTime.now().subtract(const Duration(days: 2))),
+    // Quesions(
+    //     id: DateTime.now().toString(),
+    //     title: "Masjid",
+    //     amount: 400,
+    //     date: DateTime.now().subtract(Duration(days: 3))),
   ];
 
   void _addNewItem(String title, double amount, DateTime date) {
@@ -86,6 +76,7 @@ class _ExpenseState extends State<Expense> {
 
   void _deleteTransaction(String transaction_id) {
     setState(() {
+      print("the Id we got :${transaction_id}");
       _quesions.removeWhere((element) => transaction_id == element);
     });
   }
