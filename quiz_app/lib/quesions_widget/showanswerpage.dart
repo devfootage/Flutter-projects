@@ -12,7 +12,7 @@ class ShowAnswerPage extends StatefulWidget {
 class _MyShowAnswerPage extends State<ShowAnswerPage> {
   double get calculatetotal {
     double total = widget.getTototal as double;
-    return total;
+    return total == null ? 0 : total;
   }
 
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:quiz_app/models/quesions.dart';
+// user defined imports
 import 'package:quiz_app/quesions_widget/showanswerpage.dart';
 
 class QuesionDispaly extends StatelessWidget {
