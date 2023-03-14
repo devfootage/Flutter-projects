@@ -17,7 +17,7 @@ class _IntroPageBoxState extends State<IntroPageBox> {
         width: 280,
         decoration: BoxDecoration(
           color: Theme.of(context).textTheme.bodyMedium!.color,
-          borderRadius: BorderRadius.circular(46),
+          borderRadius: BorderRadius.circular(45),
         ),
         child: Column(children: [
           Text(
